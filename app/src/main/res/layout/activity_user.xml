@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserActivity">
+    tools:context=".ContactActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
@@ -104,59 +104,6 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/underline"/>
-
-
-    <RelativeLayout
-        android:id="@+id/relative_house_no"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:background="?attr/selectableItemBackground"
-        android:layout_below="@id/relative_phone"
-        android:paddingVertical="10dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginStart="70dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Country"
-                android:textSize="12sp"/>
-
-            <TextView
-                android:id="@+id/country_profile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="UAE"
-                android:textSize="26sp"
-                android:textColor="@color/black"/>
-
-        </LinearLayout>
-
-
-    </RelativeLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </RelativeLayout>
