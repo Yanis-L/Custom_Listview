@@ -19,7 +19,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class ContactListActivity extends AppCompatActivity {
 
     private static final int PERMISSIONS_REQUEST_READ_CONTACTS = 100;
     ArrayList<Contact> contactsList = new ArrayList<>();
@@ -56,11 +56,11 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Contact selectedContact = contactsList.get(position);
 
-                Intent intent = new Intent(MainActivity.this, ContactActivity.class);
+                Intent intent = new Intent(ContactListActivity.this, ContactActivity.class);
                 intent.putExtra("name", selectedContact.name);
                 intent.putExtra("phone", selectedContact.phoneNo);
                 intent.putExtra("imageUri", selectedContact.imageUri);
-                Toast.makeText(MainActivity.this, "Ouverture de ContactActivity", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ContactListActivity.this, "Ouverture de ContactActivity", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
         });
